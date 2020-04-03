@@ -1,4 +1,10 @@
 package com.youngmin.me.post;
 
-public interface PostCustomRepository {
+import java.util.List;
+
+public interface PostCustomRepository<Post, Long> {
+
+    public List<Post> findMyPost();
+
+    public void delete(Post entity);
 }

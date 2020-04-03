@@ -16,7 +16,7 @@ public class PostCustomRepositoryDefault implements PostCustomRepository<Post, L
 
     @Override
     public List<Post> findMyPost() {
-        System.out.println("custom findMypost");
+        System.out.println("custom findMyPost");
         return entityManager.createQuery("SELECT p FROM Post AS p").getResultList();
     }
 
